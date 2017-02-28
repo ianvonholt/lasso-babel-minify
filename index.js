@@ -9,11 +9,18 @@ function getBabel() {
     return babel;
 }
 
-var defaultBabelOptions = {
-    "presets": [
-        require('babel-preset-babili')
-    ]
-};
+var defaultBabelOptions;
+
+function getDefaultBabelOptions() {
+    if (!defaultBabelOptions) {
+        defaultBabelOptions = {
+            "presets": [
+                require('babel-preset-babili')
+            ]
+        };
+    }
+    return defaultBabelOptions;
+}
 
 
 function isInline(lassoContext) {
@@ -52,7 +59,7 @@ module.exports = function(lasso, pluginConfig) {
                     babelrc: false
                 });
             } else {
-                babelOptions = defaultBabelOptions;
+                babelOptions = getDefaultBabelOptions();
             }
 
             let babel = getBabel();
