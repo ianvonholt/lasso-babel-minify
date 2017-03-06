@@ -11,6 +11,7 @@ npm install lasso-babili --save
 
 ```js
 require('lasso').configure({
+    minifyJS: false, // Make sure the defaultJS  minifier is not enabled
     // ...
     plugins: [
         // ...
