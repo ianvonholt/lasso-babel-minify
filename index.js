@@ -15,7 +15,7 @@ function getDefaultBabelOptions() {
     if (!defaultBabelOptions) {
         defaultBabelOptions = {
             "presets": [
-                require('babel-preset-babili')
+                require('babel-preset-minify')
             ]
         };
     }
