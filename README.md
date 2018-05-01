@@ -1,10 +1,10 @@
-lasso-babili
+lasso-babel-minify
 ============
 
 # Installation
 
 ```bash
-npm install lasso-babili --save
+npm install lasso-bable-minify --save
 ```
 
 # Usage:
@@ -16,7 +16,7 @@ require('lasso').configure({
     plugins: [
         // ...
         {
-            plugin: 'lasso-babili',
+            plugin: 'lasso-babel-minify',
             enabled: process.env.NODE_ENV === 'production'
         }
     ]

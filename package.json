@@ -1,6 +1,6 @@
 {
-  "name": "lasso-babili",
-  "description": "Transform for Lasso.js to minify JavaScript using Babili",
+  "name": "lasso-babel-minify",
+  "description": "Transform for Lasso.js to minify JavaScript using Babel Minify",
   "keywords": [
     "lasso",
     "lasso-plugin",
@@ -9,24 +9,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lasso-js/lasso-babili.git"
+    "url": "https://github.com/ianvonholt/lasso-babel-minify.git"
   },
   "scripts": {
     "test": "node_modules/.bin/jshint *.js"
   },
-  "author": "Patrick Steele-Idem <pnidem@gmail.com>",
-  "contributors": [
-    "Patrick Steele-Idem <pnidem@gmail.com>"
-  ],
-  "maintainers": "Patrick Steele-Idem <pnidem@gmail.com>",
   "dependencies": {
-    "babel-core": "^6.23.1",
-    "babel-preset-babili": "0.0.11"
+    "babel-core": "^6.26.3",
+    "babel-preset-minify": "^0.4.0"
   },
   "devDependencies": {
-    "mocha": "~1.15.1",
-    "chai": "~1.8.1",
-    "jshint": "^2.4.4"
+    "mocha": "~5.1.1",
+    "chai": "~4.1.2",
+    "jshint": "^2.9.5"
   },
   "license": "MIT",
   "bin": {},
@@ -34,5 +29,5 @@
     "registry": "https://registry.npmjs.org/"
   },
   "main": "index.js",
-  "version": "1.0.1"
+  "version": "2.0.0"
 }
